@@ -1,0 +1,15 @@
+[package]
+name = "note_taking_app"
+version = "0.2.1"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+name = "note_taking_app"
+path = "src/lib.rs"
+
+[dependencies]
+chrono = "0.4.38"
+serde = {version = "1.0.203", features = ["serde_derive"]}
+serde_json = "1.0.117"
+wasm-bindgen = "0.2.92"
